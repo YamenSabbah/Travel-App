@@ -2,37 +2,68 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8" />
-        <title>Test</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Travel App</title>
     </head>
 
     <body>
         <header>
-            <div class="">Logo</div>
-            <div class="">navigation</div>
+            <h1>Travel Planner</h1>
         </header>
-
         <main>
-            <section>
-                <form id="urlForm">
-                    <input
-                        id="name"
-                        type="text"
-                        name="url"
-                        placeholder="Enter URL"
-                        required
-                    />
-                    <button id="submitButton" type="submit">Submit</button>
-                </form>
-            </section>
+            <form id="search" action="">
+                <label for="destination">Enter the City</label>
+                <input
+                    name="City"
+                    type="text"
+                    id="destination"
+                    placeholder="Enter a City..."
+                    required
+                />
+                <input
+                    name="Date"
+                    type="date"
+                    id="date"
+                    placeholder="Enter a date..."
+                    required
+                />
+                <button id="searchBtn" type="submit">Search</button>
+            </form>
 
-            <section>
-                <strong>Form Results:</strong>
-                <div id="results"></div>
+            <section class="results">
+                <!-- <div class="image-display"><img src="" alt=""></div>
+                <div class="weather-info">
+                    <h3 class="city"></h3>
+                    <h3 class="date"></h3>
+                    <h4 class="Rdays"></h4>
+                    <h5 class="max-temp"></h5>
+                    <h5 class="min-temp"></h5>
+                    <h5 class="weatherDesc"></h5>
+                </div> -->
             </section>
         </main>
 
-        <footer>
-            <p>This is a footer</p>
-        </footer>
+        <script>
+            // Check that service workers are supported
+            if ("serviceWorker" in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener("load", () => {
+                    navigator.serviceWorker
+                        .register("/service-worker.js")
+                        .then((registration) => {
+                            console.log(
+                                "ServiceWorker registration successful with scope: ",
+                                registration.scope
+                            );
+                        })
+                        .catch((error) => {
+                            console.log(
+                                "ServiceWorker registration failed:",
+                                error
+                            );
+                        });
+                });
+            }
+        </script>
     </body>
 </html>
