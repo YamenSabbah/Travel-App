@@ -26,7 +26,21 @@ Testing: Jest
 ```bash
   npm install
 ```
-4. Start the development server:
+4. Start the build to make dist :
 ```bash
-    npm run dev
+    npm run build-prod
 ```
+5. Start the development server
+```bash
+   npm run dev
+```
+6. run npm start that the server talk to the clinet 
+```bash
+   npm start
+```
+## Requirements
+- Node.js v18.16.0 (or the version you are using)
+- npm (comes with Node.js)
+- Webpack
+- Express
+
