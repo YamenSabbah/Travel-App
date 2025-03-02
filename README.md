@@ -16,7 +16,7 @@ Testing: Jest
 ## Setup Instructions
 1. Clone the repository:
    ```bash
-   git clone <https://github.com/YamenSabbah/Travel-App.git>
+   git clone https://github.com/YamenSabbah/Travel-App.git
    ```
 2. Navigate to the project folder:
 ```bash
