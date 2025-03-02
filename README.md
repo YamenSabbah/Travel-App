@@ -13,28 +13,20 @@ Frontend: JavaScript, HTML, CSS
 Backend: Express.js, Node.js
 Build Tool: Webpack
 Testing: Jest
-Install the necessary dependencies:
+## Setup Instructions
+1. Clone the repository:
    ```bash
-   npm install
+   git clone <https://github.com/YamenSabbah/Travel-App.git>
    ```
-## 🛠 Build & Development
-
-To set up **webpack** and start your development environment, follow these steps:
-
-1. First, build your project to create the `dist` folder:
-
-   ```bash
-   npm run build
-   ```
-
-2. Then, start the development server with webpack:
-
-   ```bash
-   npm run dev
-   ```
-
-3. Finally, you can run both the development server and Express simultaneously for hot reloading and a working backend:
-
-   ```bash
-   npm run start
-   ```
+2. Navigate to the project folder:
+```bash
+  cd travel-app
+``` 
+3. Install dependencies
+```bash
+  npm install
+```
+4. Start the development server:
+```bash
+    npm run dev
+```
